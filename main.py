@@ -10,11 +10,7 @@ import logging
 import os
 import sklearn
 
-
-
-
 parser = argparse.ArgumentParser(description='classifer')
-
 # basic config
 parser.add_argument('--is_training', type=int,  default=1, help='status')
 parser.add_argument('--model', type=str, default='ResNetClassifier',help='model name, options: [ResNetClassifier]')
