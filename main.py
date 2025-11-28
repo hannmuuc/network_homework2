@@ -37,7 +37,8 @@ parser.add_argument('--use_amp', action='store_true', help='use automatic mixed 
 parser.add_argument('--pct_start', type=float, default=0.2, help='pct_start')
 
 # GPU
-parser.add_argument('--use_gpu', type=bool, default=True, help='use gpu')
+
+parser.add_argument('--use_gpu', action='store_true', help='use gpu (default: False)')
 parser.add_argument('--gpu', type=int, default=0, help='gpu')
 parser.add_argument('--devices', type=str, default='0,1', help='device ids of multile gpus')
 parser.add_argument('--use_multi_gpu', action='store_true', help='use multiple gpus', default=False)
@@ -56,6 +57,7 @@ def seed_all(fix_seed=2023):
 
 def main():
     args = parser.parse_args()
+    print(args.use_gpu)
     args.use_gpu = True if torch.cuda.is_available() and args.use_gpu else False
 
     fix_seed = args.fix_seed
