@@ -22,21 +22,24 @@
 
 ### 1. 基础环境要求
 
+```
 - - Python 3.8 - 3.11
 
 - - PyTorch 1.10+（需匹配CUDA版本，建议CUDA 11.3+以加速训练）
 
 - - CUDA 10.2+（可选，CPU环境可忽略）
+```
 
 ### 2. 依赖安装
 
 项目根目录提供 requirements.txt 文件，执行以下命令一键安装依赖：
 
 # 建议先创建虚拟环境
+```
 pip install -r requirements.txt
-
+```
 ### 3. requirements.txt 内容
-
+```
 torch>=1.10.0
 torchvision>=0.11.0
 numpy>=1.21.0
@@ -47,13 +50,13 @@ seaborn>=0.11.0
 tqdm>=4.62.0
 pillow>=8.3.0
 logging>=0.5.1.2
-
+```
 ## 数据集说明
 
 ### 1. 数据集结构
 
 请将数据集按以下结构放置在项目根目录，或通过配置文件指定自定义路径：
-
+```
 dataset/
   └── thermal_classification_cropped/
         ├── icas/          # ICAS阳性样本（303张）
@@ -62,7 +65,7 @@ dataset/
         └── non_icas/      # Non-ICAS阴性样本（647张）
             ├── normal_1.jpg
             └── ...
-
+```
 ### 2. 数据规格
 
 - - 图像格式：JPG
@@ -76,11 +79,10 @@ dataset/
 ### 1. 一键训练
 
 执行项目入口文件 main.py，默认启动完整训练流程：
-
-'''
+默认使用GPU
+```
 python main.py
-'''
-
+```
 ### 2. 训练过程说明
 
 - - 自动加载数据并执行预处理（增强、归一化等）
@@ -137,11 +139,7 @@ python main.py
 
 ## 补充说明
 
-- 1. 若训练时出现GPU内存不足，可降低批次大小（建议最小4）或使用轻量型模型（如EfficientNet-B0）；
 
-- 2. 模型过拟合时，可增加数据增强强度、调大Dropout比例或延长早停容忍轮数；
-
-- 3. 所有可视化结果默认保存至 output/pic 目录，可通过配置文件修改保存路径。
 
 2. 模型过拟合时，可增加数据增强强度、调大Dropout比例或延长早停容忍轮数；
 
