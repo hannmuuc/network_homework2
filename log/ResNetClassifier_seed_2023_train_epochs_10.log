@@ -1,0 +1,61 @@
+2025-11-28 12:00:30,425 - __main__ - INFO - Args in experiment:
+2025-11-28 12:00:30,425 - __main__ - INFO - Namespace(is_training=1, model='ResNetClassifier', data_path='./dataset/thermal_classification_cropped/', checkpoints='./checkpoints/', num_class=2, num_workers=10, itr=1, train_epochs=10, batch_size=16, patience=15, learning_rate=0.001, des='test', loss='MSE', drop_last=True, lradj='TST', use_amp=False, pct_start=0.2, use_gpu=True, gpu=0, devices='0,1', use_multi_gpu=False, fix_seed=2023, device_ids=[0, 1], seed=2023, log_path='./log/ResNetClassifier_seed_2023_train_epochs_10.log', logger=<Logger __main__ (INFO)>)
+2025-11-28 12:00:30,633 - Exp_ResNetClassifier_2164428878848 - INFO - Exp_ResNetClassifier init
+2025-11-28 12:00:30,633 - __main__ - INFO - >>>>>>>start training : ResNetClassifier_2023>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-11-28 12:00:30,636 - Exp_ResNetClassifier_2164428878848 - INFO - Dataset loaded successfully! Total samples: 510
+2025-11-28 12:00:30,639 - Exp_ResNetClassifier_2164428878848 - INFO - ============================================================
+2025-11-28 12:00:30,639 - Exp_ResNetClassifier_2164428878848 - INFO - Full dataset class distribution:
+2025-11-28 12:00:30,639 - Exp_ResNetClassifier_2164428878848 - INFO -   Non-ICAS: 347 samples (68.0%)
+2025-11-28 12:00:30,639 - Exp_ResNetClassifier_2164428878848 - INFO -   ICAS: 163 samples (32.0%)
+2025-11-28 12:00:30,639 - Exp_ResNetClassifier_2164428878848 - INFO - Train set (357 samples, 70.0% of total):
+2025-11-28 12:00:30,639 - Exp_ResNetClassifier_2164428878848 - INFO -   Non-ICAS: 243 samples (68.1%)
+2025-11-28 12:00:30,639 - Exp_ResNetClassifier_2164428878848 - INFO -   ICAS: 114 samples (31.9%)
+2025-11-28 12:00:30,640 - Exp_ResNetClassifier_2164428878848 - INFO - ============================================================
+2025-11-28 12:00:30,642 - Exp_ResNetClassifier_2164428878848 - INFO - Dataset loaded successfully! Total samples: 510
+2025-11-28 12:00:30,643 - Exp_ResNetClassifier_2164428878848 - INFO - ============================================================
+2025-11-28 12:00:30,643 - Exp_ResNetClassifier_2164428878848 - INFO - Full dataset class distribution:
+2025-11-28 12:00:30,643 - Exp_ResNetClassifier_2164428878848 - INFO -   Non-ICAS: 347 samples (68.0%)
+2025-11-28 12:00:30,644 - Exp_ResNetClassifier_2164428878848 - INFO -   ICAS: 163 samples (32.0%)
+2025-11-28 12:00:30,644 - Exp_ResNetClassifier_2164428878848 - INFO - Val set (76 samples, 14.9% of total):
+2025-11-28 12:00:30,644 - Exp_ResNetClassifier_2164428878848 - INFO -   Non-ICAS: 52 samples (68.4%)
+2025-11-28 12:00:30,644 - Exp_ResNetClassifier_2164428878848 - INFO -   ICAS: 24 samples (31.6%)
+2025-11-28 12:00:30,644 - Exp_ResNetClassifier_2164428878848 - INFO - ============================================================
+2025-11-28 12:00:30,646 - Exp_ResNetClassifier_2164428878848 - INFO - Dataset loaded successfully! Total samples: 510
+2025-11-28 12:00:30,648 - Exp_ResNetClassifier_2164428878848 - INFO - ============================================================
+2025-11-28 12:00:30,648 - Exp_ResNetClassifier_2164428878848 - INFO - Full dataset class distribution:
+2025-11-28 12:00:30,648 - Exp_ResNetClassifier_2164428878848 - INFO -   Non-ICAS: 347 samples (68.0%)
+2025-11-28 12:00:30,648 - Exp_ResNetClassifier_2164428878848 - INFO -   ICAS: 163 samples (32.0%)
+2025-11-28 12:00:30,648 - Exp_ResNetClassifier_2164428878848 - INFO - Test set (77 samples, 15.1% of total):
+2025-11-28 12:00:30,648 - Exp_ResNetClassifier_2164428878848 - INFO -   Non-ICAS: 52 samples (67.5%)
+2025-11-28 12:00:30,648 - Exp_ResNetClassifier_2164428878848 - INFO -   ICAS: 25 samples (32.5%)
+2025-11-28 12:00:30,649 - Exp_ResNetClassifier_2164428878848 - INFO - ============================================================
+2025-11-28 12:00:30,649 - Exp_ResNetClassifier_2164428878848 - INFO - ѵ����ʼ����� | �������ã���ǩƽ��(0.1)��Ȩ��˥��(1e-4)���ݶȲü�(1.0)����ͣ(patience=10)
+2025-11-28 12:00:30,649 - Exp_ResNetClassifier_2164428878848 - INFO - ѵ��������10 | �豸��cuda:0
+2025-11-28 12:00:34,696 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [1/10] | Train Loss: 0.5767, Train Acc: 67.23% | Val Loss: 0.5383, Val Acc: 68.42% | Patience Counter: 0/10 | Current LR: 0.001000
+2025-11-28 12:00:37,213 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [2/10] | Train Loss: 0.5649, Train Acc: 67.51% | Val Loss: 0.5420, Val Acc: 68.42% | Patience Counter: 1/10 | Current LR: 0.001000
+2025-11-28 12:00:39,821 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [3/10] | Train Loss: 0.5202, Train Acc: 67.79% | Val Loss: 0.6416, Val Acc: 61.84% | Patience Counter: 2/10 | Current LR: 0.001000
+2025-11-28 12:00:42,490 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [4/10] | Train Loss: 0.5143, Train Acc: 69.47% | Val Loss: 0.6197, Val Acc: 63.16% | Patience Counter: 3/10 | Current LR: 0.001000
+2025-11-28 12:00:45,168 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [5/10] | Train Loss: 0.4437, Train Acc: 75.35% | Val Loss: 0.7823, Val Acc: 61.84% | Patience Counter: 4/10 | Current LR: 0.001000
+2025-11-28 12:00:47,922 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [6/10] | Train Loss: 0.3988, Train Acc: 80.67% | Val Loss: 1.0341, Val Acc: 51.32% | Patience Counter: 5/10 | Current LR: 0.001000
+2025-11-28 12:00:50,673 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [7/10] | Train Loss: 0.4068, Train Acc: 82.35% | Val Loss: 0.7894, Val Acc: 55.26% | Patience Counter: 6/10 | Current LR: 0.001000
+2025-11-28 12:00:53,412 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [8/10] | Train Loss: 0.3679, Train Acc: 84.59% | Val Loss: 0.7929, Val Acc: 64.47% | Patience Counter: 7/10 | Current LR: 0.001000
+2025-11-28 12:00:56,034 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [9/10] | Train Loss: 0.3153, Train Acc: 87.11% | Val Loss: 0.8393, Val Acc: 57.89% | Patience Counter: 8/10 | Current LR: 0.001000
+2025-11-28 12:00:58,640 - Exp_ResNetClassifier_2164428878848 - INFO - Epoch [10/10] | Train Loss: 0.3599, Train Acc: 88.80% | Val Loss: 0.8556, Val Acc: 63.16% | Patience Counter: 9/10 | Current LR: 0.001000
+2025-11-28 12:00:58,640 - Exp_ResNetClassifier_2164428878848 - INFO - ѵ����� | ���������֤׼ȷ�ʣ�64.47%
+2025-11-28 12:00:59,062 - Exp_ResNetClassifier_2164428878848 - INFO - ѵ��ͼ�ѳɹ�������: D:\code\pycharm_project\network_homework2\output\pic\history
+2025-11-28 12:00:59,062 - __main__ - INFO - >>>>>>>testing : ResNetClassifier_2023<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-11-28 12:00:59,064 - Exp_ResNetClassifier_2164428878848 - INFO - Dataset loaded successfully! Total samples: 510
+2025-11-28 12:00:59,066 - Exp_ResNetClassifier_2164428878848 - INFO - ============================================================
+2025-11-28 12:00:59,067 - Exp_ResNetClassifier_2164428878848 - INFO - Full dataset class distribution:
+2025-11-28 12:00:59,067 - Exp_ResNetClassifier_2164428878848 - INFO -   Non-ICAS: 347 samples (68.0%)
+2025-11-28 12:00:59,067 - Exp_ResNetClassifier_2164428878848 - INFO -   ICAS: 163 samples (32.0%)
+2025-11-28 12:00:59,067 - Exp_ResNetClassifier_2164428878848 - INFO - Test set (77 samples, 15.1% of total):
+2025-11-28 12:00:59,067 - Exp_ResNetClassifier_2164428878848 - INFO -   Non-ICAS: 52 samples (67.5%)
+2025-11-28 12:00:59,067 - Exp_ResNetClassifier_2164428878848 - INFO -   ICAS: 25 samples (32.5%)
+2025-11-28 12:00:59,067 - Exp_ResNetClassifier_2164428878848 - INFO - ============================================================
+2025-11-28 12:00:59,067 - Exp_ResNetClassifier_2164428878848 - INFO - loading model
+2025-11-28 12:00:59,729 - Exp_ResNetClassifier_2164428878848 - INFO - ��������ͼ�ѳɹ�������: D:\code\pycharm_project\network_homework2\output\pic\confusion_matrix
+2025-11-28 12:01:00,020 - Exp_ResNetClassifier_2164428878848 - INFO - ROC�����ѱ�����: D:\code\pycharm_project\network_homework2\output\pic\roc_curve.png
+2025-11-28 12:01:00,021 - Exp_ResNetClassifier_2164428878848 - INFO - ROC����AUCֵ: 0.5154 (����: Non-ICAS)
+2025-11-28 12:01:00,021 - Exp_ResNetClassifier_2164428878848 - INFO - {'accuracy': 0.6493506493506493, 'precision': 0.25, 'recall': 0.04, 'f1': 0.06896551724137931, 'auc': 0.5153846153846154, 'confusion_matrix': array([[49,  3],
+       [24,  1]], dtype=int64)}

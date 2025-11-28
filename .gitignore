@@ -1,0 +1,8 @@
+node_modules/
+dataset/
+video/
+data/           # 常见的大型数据文件夹
+models/         # 可能包含大型模型文件
+dist/           # 构建输出目录
+build/          # 编译输出目录
+vendor/         # 第三方依赖
