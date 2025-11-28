@@ -77,7 +77,9 @@ dataset/
 
 执行项目入口文件 main.py，默认启动完整训练流程：
 
+'''
 python main.py
+'''
 
 ### 2. 训练过程说明
 
