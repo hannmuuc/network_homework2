@@ -36,7 +36,7 @@ parser.add_argument('--lradj', type=str, default='TST', help='adjust learning ra
 parser.add_argument('--use_amp', action='store_true', help='use automatic mixed precision training', default=False)
 parser.add_argument('--pct_start', type=float, default=0.2, help='pct_start')
 
-# GPU
+# 默认cpu
 
 parser.add_argument('--use_gpu', action='store_true', help='use gpu (default: False)')
 parser.add_argument('--gpu', type=int, default=0, help='gpu')

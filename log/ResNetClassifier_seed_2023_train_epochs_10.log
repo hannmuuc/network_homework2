@@ -58,4 +58,3 @@
 2025-11-28 12:01:00,020 - Exp_ResNetClassifier_2164428878848 - INFO - ROC�����ѱ�����: D:\code\pycharm_project\network_homework2\output\pic\roc_curve.png
 2025-11-28 12:01:00,021 - Exp_ResNetClassifier_2164428878848 - INFO - ROC����AUCֵ: 0.5154 (����: Non-ICAS)
 2025-11-28 12:01:00,021 - Exp_ResNetClassifier_2164428878848 - INFO - {'accuracy': 0.6493506493506493, 'precision': 0.25, 'recall': 0.04, 'f1': 0.06896551724137931, 'auc': 0.5153846153846154, 'confusion_matrix': array([[49,  3],
-       [24,  1]], dtype=int64)}
