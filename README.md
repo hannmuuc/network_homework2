@@ -80,8 +80,11 @@ dataset/
 
 执行项目入口文件 main.py，默认启动完整训练流程：
 ```
-# 默认使用GPU
+# 默认使用CPU
 python main.py
+
+# 使用GPU
+python main.py --use_gpu
 ```
 
 
